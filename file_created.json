@@ -1,0 +1,185 @@
+{
+    "took": 2,
+    "timed_out": false,
+    "_shards": {
+        "total": 1,
+        "successful": 1,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": {
+            "value": 2,
+            "relation": "eq"
+        },
+        "max_score": 11.587821,
+        "hits": [
+            {
+                "_index": "auditbeat-7.14.2-2023.07.27-000001",
+                "_type": "_doc",
+                "_id": "1j7DlokBEygdYMrhDhCH",
+                "_score": 11.587821,
+                "_source": {
+                    "@timestamp": "2023-07-27T09:51:51.967Z",
+                    "hash": {
+                        "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+                    },
+                    "event": {
+                        "module": "file_integrity",
+                        "dataset": "file",
+                        "kind": "event",
+                        "category": [
+                            "file"
+                        ],
+                        "type": [
+                            "creation"
+                        ],
+                        "action": [
+                            "created"
+                        ]
+                    },
+                    "service": {
+                        "type": "file_integrity"
+                    },
+                    "host": {
+                        "containerized": false,
+                        "name": "naman-base",
+                        "ip": [
+                            "10.0.2.15",
+                            "fe80::4b47:2235:15d3:e82c",
+                            "10.228.13.236",
+                            "fe80::fe8b:7c79:5207:3120"
+                        ],
+                        "mac": [
+                            "08:00:27:c3:8a:7d",
+                            "08:00:27:1b:50:16"
+                        ],
+                        "hostname": "naman-base",
+                        "architecture": "x86_64",
+                        "os": {
+                            "kernel": "5.19.0-50-generic",
+                            "codename": "jammy",
+                            "type": "linux",
+                            "platform": "ubuntu",
+                            "version": "22.04.2 LTS (Jammy Jellyfish)",
+                            "family": "debian",
+                            "name": "Ubuntu"
+                        },
+                        "id": "202525c4405b4b9c97590dcae11f7831"
+                    },
+                    "agent": {
+                        "name": "naman-base",
+                        "type": "auditbeat",
+                        "version": "7.14.2",
+                        "hostname": "naman-base",
+                        "ephemeral_id": "4b90ca4b-f3fb-4d4c-97f2-01ad6a35e317",
+                        "id": "b1269311-4cd4-4e53-946e-8018f71244db"
+                    },
+                    "ecs": {
+                        "version": "1.10.0"
+                    },
+                    "file": {
+                        "mtime": "2023-07-27T09:51:51.964Z",
+                        "path": "/home/naman/create_dummy_file.sh",
+                        "ctime": "2023-07-27T09:51:51.964Z",
+                        "size": 0,
+                        "hash": {
+                            "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+                        },
+                        "extension": "sh",
+                        "type": "file",
+                        "uid": "1000",
+                        "owner": "naman",
+                        "group": "naman",
+                        "gid": "1000",
+                        "mode": "0664",
+                        "inode": "528916"
+                    }
+                }
+            },
+            {
+                "_index": "auditbeat-7.14.2-2023.07.27-000001",
+                "_type": "_doc",
+                "_id": "BD7LlokBEygdYMrhxxKQ",
+                "_score": 11.587821,
+                "_source": {
+                    "@timestamp": "2023-07-27T10:01:23.622Z",
+                    "event": {
+                        "dataset": "file",
+                        "kind": "event",
+                        "category": [
+                            "file"
+                        ],
+                        "type": [
+                            "creation"
+                        ],
+                        "action": [
+                            "created"
+                        ],
+                        "module": "file_integrity"
+                    },
+                    "service": {
+                        "type": "file_integrity"
+                    },
+                    "file": {
+                        "hash": {
+                            "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+                        },
+                        "size": 0,
+                        "type": "file",
+                        "gid": "1000",
+                        "inode": "528921",
+                        "mtime": "2023-07-27T10:01:23.616Z",
+                        "extension": "conf",
+                        "mode": "0664",
+                        "ctime": "2023-07-27T10:01:23.616Z",
+                        "group": "naman",
+                        "path": "/home/naman/doas.conf",
+                        "uid": "1000",
+                        "owner": "naman"
+                    },
+                    "agent": {
+                        "name": "naman-base",
+                        "type": "auditbeat",
+                        "version": "7.14.2",
+                        "hostname": "naman-base",
+                        "ephemeral_id": "4b90ca4b-f3fb-4d4c-97f2-01ad6a35e317",
+                        "id": "b1269311-4cd4-4e53-946e-8018f71244db"
+                    },
+                    "ecs": {
+                        "version": "1.10.0"
+                    },
+                    "host": {
+                        "architecture": "x86_64",
+                        "os": {
+                            "family": "debian",
+                            "name": "Ubuntu",
+                            "kernel": "5.19.0-50-generic",
+                            "codename": "jammy",
+                            "type": "linux",
+                            "platform": "ubuntu",
+                            "version": "22.04.2 LTS (Jammy Jellyfish)"
+                        },
+                        "id": "202525c4405b4b9c97590dcae11f7831",
+                        "name": "naman-base",
+                        "containerized": false,
+                        "ip": [
+                            "10.0.2.15",
+                            "fe80::4b47:2235:15d3:e82c",
+                            "10.228.13.236",
+                            "fe80::fe8b:7c79:5207:3120"
+                        ],
+                        "mac": [
+                            "08:00:27:c3:8a:7d",
+                            "08:00:27:1b:50:16"
+                        ],
+                        "hostname": "naman-base"
+                    },
+                    "hash": {
+                        "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+                    }
+                }
+            }
+        ]
+    }
+}

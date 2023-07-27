@@ -1,0 +1,85 @@
+{
+    "took": 1,
+    "timed_out": false,
+    "_shards": {
+        "total": 1,
+        "successful": 1,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": {
+            "value": 1,
+            "relation": "eq"
+        },
+        "max_score": 12.099637,
+        "hits": [
+            {
+                "_index": "auditbeat-7.14.2-2023.07.27-000001",
+                "_type": "_doc",
+                "_id": "Uz6wlokBEygdYMrhkgyP",
+                "_score": 12.099637,
+                "_source": {
+                    "@timestamp": "2023-07-27T09:31:40.588Z",
+                    "event": {
+                        "kind": "event",
+                        "module": "file_integrity",
+                        "dataset": "file",
+                        "category": [
+                            "file"
+                        ],
+                        "type": [
+                            "deletion"
+                        ],
+                        "action": [
+                            "deleted"
+                        ]
+                    },
+                    "service": {
+                        "type": "file_integrity"
+                    },
+                    "file": {
+                        "path": "/home/naman/testcode.py"
+                    },
+                    "agent": {
+                        "ephemeral_id": "4b90ca4b-f3fb-4d4c-97f2-01ad6a35e317",
+                        "id": "b1269311-4cd4-4e53-946e-8018f71244db",
+                        "name": "naman-base",
+                        "type": "auditbeat",
+                        "version": "7.14.2",
+                        "hostname": "naman-base"
+                    },
+                    "ecs": {
+                        "version": "1.10.0"
+                    },
+                    "host": {
+                        "hostname": "naman-base",
+                        "architecture": "x86_64",
+                        "name": "naman-base",
+                        "os": {
+                            "family": "debian",
+                            "name": "Ubuntu",
+                            "kernel": "5.19.0-50-generic",
+                            "codename": "jammy",
+                            "type": "linux",
+                            "platform": "ubuntu",
+                            "version": "22.04.2 LTS (Jammy Jellyfish)"
+                        },
+                        "id": "202525c4405b4b9c97590dcae11f7831",
+                        "containerized": false,
+                        "ip": [
+                            "10.0.2.15",
+                            "fe80::4b47:2235:15d3:e82c",
+                            "10.228.13.236",
+                            "fe80::fe8b:7c79:5207:3120"
+                        ],
+                        "mac": [
+                            "08:00:27:c3:8a:7d",
+                            "08:00:27:1b:50:16"
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}
